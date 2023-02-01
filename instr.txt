@@ -1,0 +1,38 @@
+1. Skapa en Asp.net webb app
+2. Ladda ner Microsoft.EntityFrameworkCore.SQlite och Microsoft.EntityFrameworkCore.Tools
+3. Skapa en ny mapp som heter Data 
+4. Skapa en ny class i Data mappen, döp den till xxxDbContext
+5. I din dbcontext, ärv DbContext och skapa en konstruktor
+6. Skapa en ny mapp i ditt projekt och döp denna til Models
+7. I Models skapa en ny map som heter Domain
+8. I Din domain mapp, skapa en ny class som heter Employee.cs
+9. Skapa relevanta properties för en employee
+10. Gå tillbaka till din DBContext och skapa en property av typen DbSet som tar in en Employee
+11. Gå till program.cs och injecta dbcontext och använd sqlite i dina options
+12. Gå till appsettings.json och skapa en connection string
+13. gå tilbaka till program.cs och mata in din connection string
+14. I din package manager console, skapa din db med hjälp av ef genom att först skriva Add-Migration "Initial mig"
+15. Kör nu Update-Database
+16. Öppna DBbrowser och säkerställ att din DB skapats
+17. Navigera nu till Pages och skapa en ny mapp som du döper till Employees
+18. Högerklicka på Employees och skapa en ny RazorPage och döp denna till Add
+19. Lägg till h1 och kör applicationen. Navigera till .../employees/add
+20. Skapa en form med input fields för varje property en employee har
+21. Navigera till din code-behind fil och skapa en OnPost metod
+22. I Models mappen, skapa en ny map som heter ViewModels och i denna skapa en klass som heter AddEmployeeViewModel
+23. Skapa samma properties som i Employee klassen
+24. Gå tillbaka till till Add codebehind fil och skapa en property av EmployeeViewModel
+25. Bind sedan propertyn till razor pagen genom att skriva [BindProperty] och gå sedan till din razor page
+26. I alla dina fields, skriv asp-for och sätt dom till relevant data
+27. Skapa en readonly koppling till din dbcontext
+28. Skapa en kontstrukotr i din Add som instasierar dbcontext
+29. I din OnPost metod skapa en variabel av typen Emoployee som mappar din viewmodel med din domainmodel
+30. Kör din applikation och testa lägga till data
+31. Navigera till dbbrowser och dubbelkolla datan
+32. Skapa en ny razorpage i din employee folder och döp den till List
+33. Skapa en Lista av employee
+34. Skapa en koppling till db och i din OnGet spara all data i din lista
+35. Navigera till din List Razor page och skapa struktur med hjälp av c# kod
+36. 
+
+ 

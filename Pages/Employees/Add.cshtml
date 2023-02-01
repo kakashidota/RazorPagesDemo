@@ -1,0 +1,47 @@
+﻿@page
+@model RazorDemos.Pages.Employees.AddModel
+@{
+    var message = ViewData["Message"]?.ToString();
+}
+
+<form method="post">
+
+<h1 class="mb-3">Add new employee</h1>
+
+    @if (!string.IsNullOrEmpty(message))
+    {
+        <div class="alert alert-sucess">
+            @message
+        </div>
+    }
+
+<div class="mb-3">
+    <label class="form-label">Name</label>
+    <input type="text" class="form-control" asp-for="AddEmployeeRequest.Name"/>
+</div>
+
+<div class="mb-3">
+    <label class="form-label">Email</label>
+        <input type="email" class="form-control" asp-for="AddEmployeeRequest.Email" />
+</div>
+
+<div class="mb-3">
+    <label class="form-label">Salary</label>
+        <input type="number" class="form-control" asp-for="AddEmployeeRequest.Salary" />
+</div>
+
+<div class="mb-3">
+    <label class="form-label">Date of birth</label>
+        <input type="date" class="form-control" asp-for="AddEmployeeRequest.DateOfBirth" />
+</div>
+
+<div class="mb-3">
+    <label class="form-label">Department</label>
+        <input type="text" class="form-control" asp-for="AddEmployeeRequest.Department" />
+</div>
+
+<div>
+    <button type="submit" class="btn btn-primary">Save</button>
+</div>
+
+</form>
