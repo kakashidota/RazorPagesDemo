@@ -33,6 +33,29 @@
 33. Skapa en Lista av employee
 34. Skapa en koppling till db och i din OnGet spara all data i din lista
 35. Navigera till din List Razor page och skapa struktur med hjälp av c# kod
-36. 
-
+36. Skapa en ny page i din employees map. Skapa en Razor page som du döper till Edit
+37. I din nya page, läs in id från routen 
+38. I din OnGet metod, ta in ett Guid som argument
+39. Navigera till din List page och skapa en ny Td med ett a element i som har href till din nya sida
+40. Skapa även en tom th och kör sedan applikationen
+41. Navigera tillbaka till din code-behind i Edit och skapa en koppling till db
+42. Skapa nu en ny klass i din viewModels folder som du döper till EditEmployeeViewModel
+43. I din klass, ge din viewmodel relevanta properties
+44. Navigera tillbaka till code-behind på din Edit page
+45. I din onget Metod skapa en ny variabel som innehåller sökresultatet på idt med hjälp av din parameter
+46. Skapa en property av typen EditEmployeeViewModel
+47. Mappa över datan ifrån sökresultatet till din nya property
+48. I din razor page, skapa ett formulär som tar in alla fält med hjälp av bindproperty
+49. Navigera till din code-behind fil och skapa en onpost metod
+50. I din onpost metod, skapa en if sats som kollar om din property är null eller inte
+51. I din ifsats, skapa en ny variabel som du sätter till resultatet av idt
+52. Skapa en till ifsats som kollar om din nya variabel är null eller inte
+53. Uppdatera nu din nya variabel så den innehåller datan ifrån formuläret
+54. SaveChanges och kör din applikation
+55. I din Razor page, i diven som innehåller din knapp, skapa en ny knapp som du döper till delete
+56. Skapa handlers för varje knapp
+57. Gå till din code-behind och skapa en onpost för din deleteknapp
+58. I did metod skriv relevant kod för att ta bort i databasen
+59. Redirecta sedan användaren tillbaka
+60. 
  

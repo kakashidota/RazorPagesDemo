@@ -13,6 +13,7 @@
                 <th>Id</th>
                 <th>Name</th>
                 <th>Email</th>
+                <th> </th>
             </tr>
         </thead>
         <tbody>
@@ -22,6 +23,9 @@
                     <td>@employee.Id</td>
                     <td>@employee.Name</td>
                     <td>@employee.Email</td>
+                    <td>
+                        <a href="/Employees/Edit/@employee.Id" class="btn btn-dark">Edit</a>
+                    </td>
                 </tr>
             }
         </tbody>

@@ -1,0 +1,43 @@
+﻿@page "{id:Guid}"
+@model RazorDemos.Pages.Employees.EditModel
+@{
+}
+
+<form method="post">
+<h1 class="mb-3">Edit Employee</h1>
+
+<div class="mb-3">
+    <label class="form-label">Id</label>
+    <input type="text" class="form-control" asp-for="_EditEmployeeViewModel.Id" readonly/>
+</div>
+
+<div class="mb-3">
+    <label class="form-label">Name</label>
+    <input type="text" class="form-control" asp-for="_EditEmployeeViewModel.Name" />
+</div>
+
+<div class="mb-3">
+    <label class="form-label">Email</label>
+    <input type="email" class="form-control" asp-for="_EditEmployeeViewModel.Email" />
+</div>
+
+<div class="mb-3">
+    <label class="form-label">Salary</label>
+    <input type="number" class="form-control" asp-for="_EditEmployeeViewModel.Salary" />
+</div>
+
+<div class="mb-3">
+    <label class="form-label">Date of birth</label>
+    <input type="date" class="form-control" asp-for="_EditEmployeeViewModel.Name" />
+</div>
+
+<div class="mb-3">
+    <label class="form-label">Department</label>
+    <input type="text" class="form-control" asp-for="_EditEmployeeViewModel.Department" />
+</div>
+
+<div class="mb-3 d-flex justify-content-between">
+    <button type="submit" class="btn btn-primary" asp-page-handler="Update">Update</button>
+    <button type="submit" class="btn btn-danger" asp-page-handler="Delete">Delete</button>
+</div>
+</form>
